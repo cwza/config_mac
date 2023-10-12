@@ -1,0 +1,1 @@
+* `ln -s ~/cwza/config/alacritty ~/.config/alacritty`
