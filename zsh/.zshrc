@@ -36,5 +36,5 @@ eval "$(zoxide init zsh)"
 export PATH="$PATH:$(go env GOPATH)/bin"
 
 ############################################################### rust
-export PATH="$PATH:/Users/cwza/.cargo/bin"
+. "$HOME/.cargo/env"
 

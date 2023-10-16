@@ -6,11 +6,10 @@ bear
 fzf
 gcc
 git-delta
-helix
+gnu-sed
 koekeishiya/formulae/skhd
 koekeishiya/formulae/yabai
 neovim
-nnn
 qemu
 ripgrep
 showkey
@@ -18,5 +17,4 @@ tig
 tmux
 yt-dlp
 zoxide
-
 ```
