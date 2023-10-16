@@ -2,6 +2,14 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+--
+keymap.set("n", "<leader>rr", "<cmd>source $MYVIMRC<CR>", { desc = "Reload nvim config" })
+
+-- buffer management
+keymap.set("n", "<leader>bd", "<cmd>%bd|e#|bd#<CR>", { desc = "Close all buffer but current" })
+keymap.set("n", "<leader>bp", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
+keymap.set("n", "<leader>bn", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
+
 -- window management
 keymap.set("n", "<leader>w|", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>w-", "<C-w>s", { desc = "Split window horizontally" })
@@ -17,6 +25,7 @@ keymap.set("n", "<leader>wk", "5<C-w>+", { desc = "Resize winsow up" })
 keymap.set("n", "<leader>wl", "5<C-w>>", { desc = "Resize winsow right" })
 keymap.set("n", "<leader>wx", "<cmd>close<CR>", { desc = "Close current split" })
 
+-- tab management
 keymap.set("n", "<leader>to", "<cmd>tabnew<CR>", { desc = "Open new tab" }) -- open new tab
 keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" }) -- close current tab
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
@@ -45,7 +54,7 @@ keymap.set("n", "N", "Nzz")
 
 -- avoid yank when paste or delete
 keymap.set("n", "x", [["_x]])
-keymap.set("x", "<leader>p", [["_dP]])
+keymap.set("x", "p", [["_dP]])
 keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- yank and paste to system clipboard
@@ -56,6 +65,4 @@ keymap.set("n", "<leader>Y", [["+Y]])
 keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- toggle relative line number
--- <F2> <Cmd>set number <bar> setlocal relativenumber!<CR>
 keymap.set("n", "<leader>ul", "<Cmd>set number <bar> setlocal relativenumber!<CR>", { desc = "toggle relative number" })
-

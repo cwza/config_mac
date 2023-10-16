@@ -1,8 +1,24 @@
 [user]
-        name = cwza
-        email = cwz0205a@gmail.com
+    name = cwza
+    email = cwz0205a@gmail.com
 [push]
-        default = simple
+    default = simple
 [core]
-        quotepath = false
-        editor = /usr/bin/vim
+    quotepath = false
+    editor = nvim
+    pager = delta
+[interactive]
+    navigate = true
+    light = false
+[diff]
+    colorMoved = default
+[delta]
+    side-by-side = true
+[merge]
+    conflictstyle = diff3
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
+    prompt = false
+[mergetool "vimdiff"]
+    cmd = "nvim  -d $MERGED $LOCAL $BASE $REMOTE -c 'wincmd J | wincmd ='"
