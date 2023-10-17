@@ -18,3 +18,10 @@ tmux
 yt-dlp
 zoxide
 ```
+
+## Other software that not installed by homebrew
+```
+Karabiner-Elements
+Alacritty
+zimfw
+```
