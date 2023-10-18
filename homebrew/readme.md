@@ -3,8 +3,10 @@
 * reinstall these packages to new mac
 ```
 bear
+btop
+fd
 fzf
-gcc
+gdu
 git-delta
 gnu-sed
 koekeishiya/formulae/skhd
@@ -14,9 +16,9 @@ qemu
 ripgrep
 showkey
 tig
+tldr
 tmux
 yt-dlp
-zoxide
 ```
 
 ## Other software that not installed by homebrew

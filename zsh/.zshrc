@@ -1,5 +1,5 @@
 alias reset="tput reset"
-
+alias mydu="du -shc -- * .*"
 
 ################################################################ Zimfw
 ZIM_HOME=~/.zim
@@ -27,10 +27,15 @@ fi
 [[ $- == *i* ]] && source "/opt/homebrew/opt/fzf/shell/completion.zsh" 2> /dev/null
 # Key bindings
 source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
-
-
-############################################################# zoxide
-eval "$(zoxide init zsh)"
+# fd to replace find, note: add --hidden --no-ignore to show hidden or git ignored files
+export FZF_DEFAULT_COMMAND="fd"
+export FZF_ALT_C_COMMAND="fd --type d . $HOME/cwza"
+_fzf_compgen_path() {
+  fd --follow . "$1"
+}
+_fzf_compgen_dir() {
+  fd --type d --follow . "$1"
+}
 
 ############################################################### go
 export PATH="$PATH:$(go env GOPATH)/bin"
