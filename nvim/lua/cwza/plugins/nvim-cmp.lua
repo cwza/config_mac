@@ -30,7 +30,7 @@ return {
                 ["<C-j>"] = cmp.mapping.select_next_item(), -- next suggestion
                 ["<C-b>"] = cmp.mapping.scroll_docs(-4),
                 ["<C-f>"] = cmp.mapping.scroll_docs(4),
-                ["<C-Tab>"] = cmp.mapping.complete(), -- show completion suggestions
+                ["<C-Space>"] = cmp.mapping.complete(), -- show completion suggestions
                 ["<C-e>"] = cmp.mapping.abort(), -- close completion window
                 ["<CR>"] = cmp.mapping.confirm({ select = false }),
             }),
@@ -44,6 +44,7 @@ return {
             -- configure lspkind for vs-code like pictograms in completion menu
             formatting = {
                 format = lspkind.cmp_format({
+                    mode = "symbol",
                     maxwidth = 50,
                     ellipsis_char = "...",
                 }),
@@ -51,4 +52,3 @@ return {
         })
     end,
 }
-
