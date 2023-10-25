@@ -31,11 +31,10 @@ return {
         telescope.load_extension("fzf")
 
         -- set keymaps
-        local keymap = vim.keymap -- for conciseness
-        keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "fuzzy find files" })
-        keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "fuzzy find buffers" })
-        keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "fuzzy find recent files" })
-        keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "find string" })
-        keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "find string under cursor" })
+        vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "fuzzy find files" })
+        vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "fuzzy find buffers" })
+        vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "fuzzy find recent files" })
+        vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "find string" })
+        vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>", { desc = "find string under cursor" })
     end,
 }

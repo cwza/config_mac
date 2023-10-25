@@ -9,7 +9,6 @@ return {
         local aerial = require("aerial")
         aerial.setup({})
 
-        local keymap = vim.keymap
-        keymap.set("n", "<leader>aa", "<cmd>AerialToggle!<CR>")
+        vim.keymap.set("n", "<leader>aa", "<cmd>AerialToggle!<CR>")
     end,
 }

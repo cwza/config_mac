@@ -16,8 +16,7 @@ return {
             dapui.close()
         end
 
-        local keymap = vim.keymap
-        keymap.set("n", "<leader>dd", function()
+        vim.keymap.set("n", "<leader>dd", function()
             dapui.toggle()
         end, { desc = "Toggle debugger ui" })
     end,

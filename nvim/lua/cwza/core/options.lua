@@ -1,24 +1,19 @@
-local opt = vim.opt
-
-opt.shiftwidth = 4
-opt.tabstop = 4
-opt.expandtab = true
-opt.smartindent = true
-
-opt.ignorecase = true
-opt.smartcase = true
-
-opt.splitbelow = true
-opt.splitright = true
-
-opt.background = "dark"
-opt.signcolumn = "yes"
-opt.cursorline = true
-opt.wrap = false
-opt.termguicolors = true
-opt.number = true
-opt.mouse = "a"
-opt.hlsearch = false
-opt.clipboard = ""
-opt.swapfile = false
-
+vim.opt.shiftwidth = 4
+vim.opt.tabstop = 4
+vim.opt.expandtab = true
+vim.opt.smartindent = true
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.splitbelow = true
+vim.opt.splitright = true
+vim.opt.background = "dark"
+vim.opt.signcolumn = "yes"
+vim.opt.cursorline = true
+vim.opt.wrap = false
+vim.opt.termguicolors = true
+vim.opt.number = true
+vim.opt.mouse = "a"
+vim.opt.hlsearch = false
+vim.opt.clipboard = ""
+vim.opt.swapfile = false
+vim.opt.backspace = "indent,eol,start"

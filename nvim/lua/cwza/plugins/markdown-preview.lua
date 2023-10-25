@@ -6,7 +6,6 @@ return {
         vim.fn["mkdp#util#install"]()
     end,
     config = function()
-        local keymap = vim.keymap
-        keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Toggle markdown preview" })
+        vim.keymap.set("n", "<leader>mp", "<cmd>MarkdownPreviewToggle<CR>", { desc = "Toggle markdown preview" })
     end,
 }
