@@ -1,3 +1,4 @@
+# yabai
 alt - j : yabai -m window --focus south
 alt - k : yabai -m window --focus north
 alt - h : yabai -m window --focus west
@@ -31,3 +32,7 @@ ctrl + alt - right : yabai -m window --space next
 
 alt - s : yabai -m display --focus west
 alt - g : yabai -m display --focus east
+
+
+# alacritty [cmd-`]
+cmd - 0x32 : /Applications/Alacritty.app/Contents/MacOS/Alacritty
