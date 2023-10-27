@@ -4,8 +4,10 @@ return {
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
         { "antosha417/nvim-lsp-file-operations", config = true },
+        "folke/neodev.nvim",
     },
     config = function()
+        require("neodev").setup({})
         local lspconfig = require("lspconfig")
         local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
@@ -53,18 +55,10 @@ return {
         lspconfig["lua_ls"].setup({
             capabilities = capabilities,
             on_attach = on_attach,
-            settings = { -- custom settings for lua
+            settings = {
                 Lua = {
-                    -- make the language server recognize "vim" global
-                    diagnostics = {
-                        globals = { "vim" },
-                    },
                     workspace = {
-                        -- make language server aware of runtime files
-                        library = {
-                            [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-                            [vim.fn.stdpath("config") .. "/lua"] = true,
-                        },
+                        checkThirdParty = false,
                     },
                 },
             },

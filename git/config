@@ -7,6 +7,7 @@
     quotepath = false
     editor = nvim
     pager = delta
+    excludesFile = ~/.config/git/.gitignore
 [interactive]
     navigate = true
     light = false

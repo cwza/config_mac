@@ -21,6 +21,7 @@
   "mason-nvim-dap.nvim": { "branch": "main", "commit": "6148b51db945b55b3b725da39eaea6441e59dff8" },
   "mason-tool-installer.nvim": { "branch": "main", "commit": "e4f34741daa9cf95de68a603d3e7a6844a69fdf0" },
   "mason.nvim": { "branch": "main", "commit": "cd7835b15f5a4204fc37e0aa739347472121a54c" },
+  "neodev.nvim": { "branch": "main", "commit": "7b46fd0f81c9c9ef5d5898879e86ae271152c79f" },
   "nvim-autopairs": { "branch": "master", "commit": "748e72c05495a3d30e88a6ef04b21697019a9aa9" },
   "nvim-cmp": { "branch": "main", "commit": "5dce1b778b85c717f6614e3f4da45e9f19f54435" },
   "nvim-colorizer.lua": { "branch": "master", "commit": "dde3084106a70b9a79d48f426f6d6fec6fd203f7" },

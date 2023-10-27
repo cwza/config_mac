@@ -66,3 +66,24 @@ vim.keymap.set(
     "<Cmd>set number <bar> setlocal relativenumber!<CR>",
     { desc = "toggle relative number" }
 )
+
+-- gx to open selected string by system
+function GetVisualSelection()
+    vim.cmd('silent noau normal "vy')
+    local text = vim.fn.getreg("v")
+    text = string.gsub(text, "\n", "")
+    vim.fn.setreg("v", {})
+    return text
+end
+function OpenBySystem()
+    local str = GetVisualSelection()
+    if #str >= 1 and str:sub(1, 1) == "~" then
+        str = "~" .. vim.fn.shellescape(str:sub(2))
+    else
+        str = vim.fn.shellescape(str)
+    end
+    local cmd1 = "cd " .. vim.fn.expand("%:h")
+    local cmd2 = "open " .. str
+    vim.fn.system(cmd1 .. " && " .. cmd2)
+end
+vim.keymap.set("v", "gx", OpenBySystem, { desc = "Open selected string by system" })
