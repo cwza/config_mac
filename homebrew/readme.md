@@ -25,8 +25,6 @@ yt-dlp
 ```
 
 ## Other software that not installed by homebrew
-``` sh
-Karabiner-Elements // https://karabiner-elements.pw
-Alacritty // https://alacritty.io
-zimfw // https://github.com/zimfw
-```
+- [Karabiner-Elements](https://karabiner-elements.pw)
+- [Alacritty](https://alacritty.io)
+- [zimfw](https://github.com/zimfw/zimfw)
