@@ -5,6 +5,7 @@
 * run `brew leaves` to get this list
 * reinstall these packages to new mac
 ```
+bat
 bear
 btop
 fd
