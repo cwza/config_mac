@@ -1,3 +1,6 @@
+## Install homebrew
+* follow https://brew.sh/
+
 ## List of installed packages
 * run `brew leaves` to get this list
 * reinstall these packages to new mac
@@ -22,8 +25,8 @@ yt-dlp
 ```
 
 ## Other software that not installed by homebrew
-```
-Karabiner-Elements
-Alacritty
-zimfw
+``` sh
+Karabiner-Elements // https://karabiner-elements.pw
+Alacritty // https://alacritty.io
+zimfw // https://github.com/zimfw
 ```
