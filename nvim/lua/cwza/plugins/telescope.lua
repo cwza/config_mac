@@ -10,13 +10,6 @@ return {
         local telescope = require("telescope")
         local actions = require("telescope.actions")
         telescope.setup({
-            pickers = {
-                live_grep = {
-                    additional_args = function()
-                        return { "--hidden" }
-                    end,
-                },
-            },
             defaults = {
                 path_display = { "truncate " },
                 mappings = {
@@ -31,7 +24,7 @@ return {
         telescope.load_extension("fzf")
 
         -- set keymaps
-        vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files hidden=true<cr>", { desc = "fuzzy find files" })
+        vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "fuzzy find files" })
         vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>", { desc = "fuzzy find buffers" })
         vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "fuzzy find recent files" })
         vim.keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "find string" })

@@ -1,1 +1,1 @@
-* `ln -s ~/cwza/config/nvim ~/.config/nvim`
+* `ln -s ~/config/nvim ~/.config/nvim`

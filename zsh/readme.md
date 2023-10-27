@@ -1,1 +1,1 @@
-* `ln -s ~/cwza/config/zsh ~/.config/zsh`
+* `ln -s ~/config/zsh ~/.config/zsh`

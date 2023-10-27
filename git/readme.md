@@ -1,2 +1,1 @@
-* `ln -s ~/cwza/config/git ~/.config/git`
-* `ln -s ~/cwza/config/git/.gitconfig ~/.gitconfig`
+* `ln -s ~/config/git ~/.config/git`
