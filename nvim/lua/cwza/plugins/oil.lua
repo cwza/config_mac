@@ -8,6 +8,12 @@ return {
             view_options = {
                 show_hidden = true,
             },
+            keymaps = {
+                ["<C-x>"] = "actions.select_split",
+                ["<C-v>"] = "actions.select_vsplit",
+                ["<C-s>"] = false,
+                ["<C-h>"] = false,
+            },
         })
 
         vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open oil file explore" })

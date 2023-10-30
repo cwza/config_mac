@@ -10,8 +10,6 @@ vim.keymap.set("n", "<M-n>", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>bo", "<cmd>enew<CR>", { desc = "Create a new buffer" })
 
 -- window management
-vim.keymap.set("n", "<leader>w|", "<C-w>v", { desc = "Split window vertically" })
-vim.keymap.set("n", "<leader>w-", "<C-w>s", { desc = "Split window horizontally" })
 vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
 vim.keymap.set("n", "<leader>wH", "<C-w>H", { desc = "Move window to left most" })
 vim.keymap.set("n", "<leader>wJ", "<C-w>J", { desc = "Move window to bottom most" })
