@@ -60,6 +60,9 @@ return {
                     workspace = {
                         checkThirdParty = false,
                     },
+                    diagnostics = {
+                        disable = { "missing-fields" },
+                    },
                 },
             },
         })
