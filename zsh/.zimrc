@@ -1,4 +1,4 @@
-zmodule steeef
+zmodule romkatv/powerlevel10k --use degit
 zmodule git-info
 zmodule prompt-pwd
 zmodule environment
