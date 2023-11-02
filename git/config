@@ -1,6 +1,8 @@
 [user]
     name = cwza
     email = cwz0205a@gmail.com
+[init]
+    defaultBranch = main
 [push]
     default = simple
 [core]

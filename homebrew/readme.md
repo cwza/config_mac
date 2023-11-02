@@ -2,28 +2,8 @@
 * follow https://brew.sh/
 
 ## List of installed packages
-* run `brew leaves` to get this list
+* run `brew leaves >| homebrew/brew_pkg.txt` to export name of all installed packages to ./brew_pkg.txt
 * reinstall these packages to new mac
-```
-bat
-bear
-btop
-fd
-fzf
-gdu
-git-delta
-gnu-sed
-koekeishiya/formulae/skhd
-koekeishiya/formulae/yabai
-neovim
-qemu
-ripgrep
-showkey
-tig
-tldr
-tmux
-yt-dlp
-```
 
 ## Other software that not installed by homebrew
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/)

@@ -47,6 +47,11 @@ return {
 
         -- used to enable autocompletion (assign to every lsp server config)
         local capabilities = cmp_nvim_lsp.default_capabilities()
+        -- for ufo folding
+        capabilities.textDocument.foldingRange = {
+            dynamicRegistration = false,
+            lineFoldingOnly = true,
+        }
         -- config for each language server
         lspconfig["pyright"].setup({
             capabilities = capabilities,
