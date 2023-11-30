@@ -48,6 +48,9 @@ _fzf_compgen_dir() {
   fd --type d --follow . "$1"
 }
 
+############################################################### ripgrep
+export RIPGREP_CONFIG_PATH="$XDG_CONFIG_HOME/ripgrep/ripgreprc"
+
 ############################################################### go
 export PATH="$PATH:$(go env GOPATH)/bin"
 
