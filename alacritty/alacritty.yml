@@ -1,6 +1,3 @@
-import:
-    - ~/.config/alacritty/material_theme.yaml
-
 window:
     padding:
         x: 15
