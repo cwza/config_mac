@@ -3,6 +3,7 @@ return {
     event = { "BufNewFile", "BufReadPre" },
     config = function()
         vim.g.codeium_disable_bindings = 1
+        vim.g.codeium_enabled = 0
         vim.keymap.set("n", "<leader>co", "<cmd>CodeiumEnable<CR>", { desc = "Enalbe Codeium" })
         vim.keymap.set("n", "<leader>cx", "<cmd>CodeiumDisable<CR>", { desc = "Disable Codeium" })
         vim.keymap.set("i", "<Tab>", function()
