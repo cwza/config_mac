@@ -2,7 +2,7 @@ window:
     padding:
         x: 15
         y: 15
-    decorations: none
+    decorations: "Transparent"
     option_as_alt: Both
 
 font:
