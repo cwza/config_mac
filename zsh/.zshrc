@@ -40,6 +40,7 @@ source "/opt/homebrew/opt/fzf/shell/key-bindings.zsh"
 export FZF_DEFAULT_COMMAND="fd"
 export FZF_ALT_C_COMMAND="fd --type d . $HOME/"
 export FZF_ALT_C_OPTS="--preview 'tree -L 2 -C {}'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_CTRL_T_OPTS="--preview 'bat -n --color=always --style=numbers --line-range=:500 {}'"
 _fzf_compgen_path() {
   fd --follow . "$1"
