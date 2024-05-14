@@ -7,6 +7,10 @@ return {
         vim.cmd([[ highlight NvimTreeFolderArrowClosed guifg=#3FC5FF ]])
         vim.cmd([[ highlight NvimTreeFolderArrowOpen guifg=#3FC5FF ]])
         require("nvim-tree").setup({
+            view = {
+                width = 35,
+                relativenumber = true,
+            },
             renderer = {
                 highlight_git = true,
                 indent_markers = {

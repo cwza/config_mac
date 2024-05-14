@@ -32,6 +32,8 @@ return {
                 "dockerfile",
                 "gitignore",
                 "query",
+                "vimdoc",
+                "c",
                 "cpp",
                 "go",
                 "rust",
@@ -40,9 +42,9 @@ return {
                 enable = true,
                 keymaps = {
                     init_selection = "<leader>v",
-                    node_incremental = "[",
+                    node_incremental = "]",
                     scope_incremental = false,
-                    node_decremental = "]",
+                    node_decremental = "[",
                 },
             },
             -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
