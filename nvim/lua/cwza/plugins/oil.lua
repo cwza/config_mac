@@ -15,6 +15,7 @@ return {
                 ["<C-h>"] = false,
             },
         })
+        oil.set_sort({ { "type", "asc" }, { "name", "asc" } })
 
         vim.keymap.set("n", "-", "<CMD>Oil<CR>", { desc = "Open oil file explore" })
     end,

@@ -51,8 +51,8 @@ vim.keymap.set("x", "p", [["_dP]])
 vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- yank and paste to system clipboard
-vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
-vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set("v", "<leader>y", [["+y]], { desc = "Copy selected contents to system keyboard" })
+vim.keymap.set("n", "<leader>y", "<cmd>%y+<CR>", { desc = "Copy all file contents to system keyboard" })
 
 -- simple replace template
 vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
