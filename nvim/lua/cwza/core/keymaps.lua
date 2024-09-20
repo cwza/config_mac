@@ -54,6 +54,13 @@ vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 vim.keymap.set("v", "<leader>y", [["+y]], { desc = "Copy selected contents to system keyboard" })
 vim.keymap.set("n", "<leader>y", "<cmd>%y+<CR>", { desc = "Copy all file contents to system keyboard" })
 
+-- delete file contents
+vim.keymap.set("n", "<leader>dd", "<cmd>%d<CR>", { desc = "Delete file contents" })
+
+-- quickfix list
+vim.keymap.set("n", "[q", "<cmd>cprev<CR>", { desc = "Previous quick fix list entry" })
+vim.keymap.set("n", "]q", "<cmd>cnext<CR>", { desc = "Next quick fix list entry" })
+
 -- simple replace template
 vim.keymap.set("n", "<leader>sr", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
