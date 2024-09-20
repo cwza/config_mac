@@ -37,6 +37,9 @@ return {
 
                         ["ac"] = { query = "@class.outer", desc = "Select outer part of a class" },
                         ["ic"] = { query = "@class.inner", desc = "Select inner part of a class" },
+
+                        ["iB"] = { query = "@block.inner", desc = "Select inner part of a block" },
+                        ["aB"] = { query = "@block.outer", desc = "Select outer part of a block" },
                     },
                 },
                 move = {
