@@ -3,7 +3,8 @@
 
 ## List of installed packages
 * run `brew leaves >| homebrew/brew_pkg.txt` to export name of all installed packages to ./brew_pkg.txt
-* reinstall these packages to new mac
+* run `brew list --cask >| homebrew/brew_cask_pkg.txt`
+* `brew install` and `brew install --cask` reinstall these packages to new mac
 
 ## Other software that not installed by homebrew
 - [Karabiner-Elements](https://karabiner-elements.pqrs.org/)

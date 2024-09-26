@@ -5,8 +5,8 @@ vim.keymap.set("n", "<leader>rr", "<cmd>source $MYVIMRC<CR>", { desc = "Reload n
 
 -- buffer management
 vim.keymap.set("n", "<leader>bd", "<cmd>%bd|e#|bd#<CR>", { desc = "Close all buffer but current" })
-vim.keymap.set("n", "<M-p>", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
-vim.keymap.set("n", "<M-n>", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
+vim.keymap.set("n", "[b", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
+vim.keymap.set("n", "]b", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>bo", "<cmd>enew<CR>", { desc = "Create a new buffer" })
 
 -- window management
