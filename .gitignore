@@ -1,5 +1,6 @@
 tmux/plugins
 
+zsh/.zcompcache
 zsh/.zcompdump
 zsh/.zcompdump.dat
 zsh/.zcompdump.zwc

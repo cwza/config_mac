@@ -1,9 +1,8 @@
 bat
 bear
 fd
-flock
+felixkratz/formulae/borders
 fzf
-gawk
 gcc
 gdu
 git-delta
@@ -13,13 +12,9 @@ jq
 koekeishiya/formulae/skhd
 koekeishiya/formulae/yabai
 neovim
-python-brotli
-python-mutagen
-python@3.11
 qemu
 ripgrep
 showkey
-texinfo
 tig
 tldr
 tmux
