@@ -37,6 +37,7 @@ for mid in $(aerospace list-monitors | awk '{print $1}'); do
             label.font="sketchybar-app-font:Regular:16.0" \
             label.padding_right=20                     \
             label.y_offset=-1                          \
+            background.border_width=0 \
             click_script="aerospace workspace $sid" \
             script="$CONFIG_DIR/plugins/space.sh $sid"
         if [ "$sid" = "$FOCUSED_WORKSPACE" ]; then
