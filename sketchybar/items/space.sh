@@ -25,6 +25,7 @@
 
 
 # -------------- For Aerospace Workspace
+FOCUSED_WORKSPACE=$(aerospace list-workspaces --focused)
 sketchybar --add event aerospace_workspace_change
 for mid in $(aerospace list-monitors | awk '{print $1}'); do
     for sid in $(aerospace list-workspaces --monitor $mid); do
@@ -38,6 +39,11 @@ for mid in $(aerospace list-monitors | awk '{print $1}'); do
             label.y_offset=-1                          \
             click_script="aerospace workspace $sid" \
             script="$CONFIG_DIR/plugins/space.sh $sid"
+        if [ "$sid" = "$FOCUSED_WORKSPACE" ]; then
+            sketchybar --set space.$sid background.drawing=on background.color=$GREY
+        else
+            sketchybar --set space.$sid background.drawing=off
+        fi
     done
     for sid in $(aerospace list-workspaces --monitor $mid --empty); do
         sketchybar -m --set space.$sid icon.color=$WHITE label.color=$WHITE
@@ -52,7 +58,4 @@ sketchybar --add item space_separator left                             \
                                  background.drawing=off                \
                                  script="$CONFIG_DIR/plugins/space_windows.sh" \
            --subscribe space_separator space_windows_change 
-
-
-
 
