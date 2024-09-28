@@ -4,6 +4,10 @@ sketchybar --set $NAME \
   label="Loading..." \
   icon.color=$WHITE
 
+LOCATION="New_Taipei"
+LANG="zh_tw"
+COMMAND="curl -s https://wttr.in/$LOCATION?format=%c%C+%t&lang=$LANG"
+
 sketchybar --set $NAME \
-    label="$(curl -s 'https://wttr.in/?format=%c%C+%t&lang=zh_tw')"
+    label="$($COMMAND)"
 
