@@ -49,7 +49,7 @@ source $CONFIG_DIR/items/space.sh
 source $CONFIG_DIR/items/front_app.sh
 
 # -- Right Side Of Notch Items --
-source $CONFIG_DIR/items/media.sh
+# source $CONFIG_DIR/items/media.sh
 
 # -- Right Side Items --
 source $CONFIG_DIR/items/calendar.sh
