@@ -12,12 +12,16 @@ return {
         local actions = require("telescope.actions")
         telescope.setup({
             defaults = {
+                initial_mode = "normal",
                 path_display = { "smart" },
                 mappings = {
                     i = {
                         ["<c-k>"] = actions.move_selection_previous, -- move to prev result
                         ["<c-j>"] = actions.move_selection_next, -- move to next result
                         ["<c-q>"] = actions.send_selected_to_qflist + actions.open_qflist,
+                    },
+                    n = {
+                        ["d"] = actions.delete_buffer, -- delete buffer
                     },
                 },
             },

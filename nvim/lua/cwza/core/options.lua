@@ -36,3 +36,4 @@ vim.opt.clipboard = ""
 vim.opt.swapfile = false
 vim.opt.backspace = "indent,eol,start"
 vim.opt.nrformats:append("alpha")
+vim.opt.autoread = true

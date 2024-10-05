@@ -4,10 +4,12 @@ vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>rr", "<cmd>source $MYVIMRC<CR>", { desc = "Reload nvim config" })
 
 -- buffer management
-vim.keymap.set("n", "<leader>bd", "<cmd>%bd|e#|bd#<CR>", { desc = "Close all buffer but current" })
+vim.keymap.set("n", "<leader>bd", "<cmd>%bd<CR>", { desc = "Close all buffer" })
+-- vim.keymap.set("n", "<leader>bd", "<cmd>%bd|e#|bd#<CR>", { desc = "Close all buffer but current" })
 vim.keymap.set("n", "[b", "<cmd>bprevious<CR>", { desc = "Go to previous buffer" })
 vim.keymap.set("n", "]b", "<cmd>bnext<CR>", { desc = "Go to next buffer" })
 vim.keymap.set("n", "<leader>bo", "<cmd>enew<CR>", { desc = "Create a new buffer" })
+vim.keymap.set("n", "<leader>br", "<cmd>b#<CR>", { desc = "Go to previously edited buffer" })
 
 -- window management
 vim.keymap.set("n", "<leader>we", "<C-w>=", { desc = "Make splits equal size" })
