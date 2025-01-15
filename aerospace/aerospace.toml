@@ -109,7 +109,7 @@ if.app-id = 'org.alacritty'
 if.during-aerospace-startup = true
 run = 'move-node-to-workspace T'
 [[on-window-detected]]
-if.app-id = 'com.microsoft.onenote.mac'
+if.app-id = 'com.microsoft.edgemac.app.dnfpoenibinnbbckgbhendmlljoobcfg'
 run = 'move-node-to-workspace N'
 [[on-window-detected]]
 if.app-id = 'com.apple.Notes'

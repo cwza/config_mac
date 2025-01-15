@@ -56,7 +56,7 @@ source $CONFIG_DIR/items/calendar.sh
 source $CONFIG_DIR/items/volume.sh
 # source $CONFIG_DIR/items/battery.sh
 source $CONFIG_DIR/items/cpu.sh
-source $CONFIG_DIR/items/weather.sh
+# source $CONFIG_DIR/items/weather.sh
 
 ##### Force all scripts to run the first time (never do this in a script) #####
 sketchybar --update
