@@ -1,5 +1,6 @@
 bat
 bear
+cmake
 fd
 felixkratz/formulae/borders
 fzf
@@ -15,6 +16,7 @@ neovim
 qemu
 ripgrep
 showkey
+slides
 tig
 tldr
 tmux
