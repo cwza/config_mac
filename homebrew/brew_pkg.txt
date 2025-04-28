@@ -3,6 +3,7 @@ bear
 cmake
 fd
 felixkratz/formulae/borders
+ffmpeg
 fzf
 gcc
 gdu
@@ -11,8 +12,8 @@ gnu-sed
 htop
 jq
 koekeishiya/formulae/skhd
-koekeishiya/formulae/yabai
 neovim
+python@3.12
 qemu
 ripgrep
 showkey

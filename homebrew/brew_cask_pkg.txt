@@ -1,2 +1,1 @@
-aerospace
 font-meslo-lg-nerd-font
